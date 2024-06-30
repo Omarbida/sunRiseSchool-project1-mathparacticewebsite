@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(to right, #2e7d32, #4eb351, #2e7d32);
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+header h1 {
+  animation: header-animtion 5s ease-in-out infinite;
+}
+.nav-bar {
+  width: 100%;
+  max-width: 1200px;
+  background: #333;
+  overflow: hidden;
+  color: #fff;
+  padding: 0;
+  text-align: center;
+  margin: 0 auto;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+.nav-bar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 16px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.nav-bar a:hover {
+  background: #575757;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.card {
+  /* background: linear-gradient(to right, #a2d68d, #d3f7c5, #a2d68d); */
+  background: radial-gradient(circle at center, #d3f7c5 20%, #a2d68d 80%);
+  padding: 16px;
+  border: 1px solid #ddd;
+  margin-top: 20px;
+  border-radius: 16px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+.problems-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.problem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #979797;
+  background-color: #cfaa88;
+  max-width: fit-content;
+  gap: 10px;
+  border-radius: 12px;
+  width: 400px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+.problem p {
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+}
+.answer-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #979797;
+  width: 300px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  text-transform: capitalize;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+@keyframes header-animtion {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.1;
+  }
+  100% {
+    scale: 1;
+  }
+}
